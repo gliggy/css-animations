@@ -6,21 +6,32 @@
     background-color: beige;
    }
    
+   input[type=checkbox] {
+    visibility: hidden;
+   }
+   
    div {
     width: 100px;
     height: 100px;
     font-weight: bold;
     position: relative;
-    animation: mymove 5s infinite;
+    animation: mymove 10s infinite;
    }
    
    @keyframes mymove {
     0% {top: 800px;}
     100% {top: 10px;}
    } 
+   
+   #box:checked + label {
+    opacity: 0.1;   
+   }
   </style>
  </head>
  <body>
-  <div><img src="balloon.png" alt="balloon" width="71px" height="100px"></div>
+  <div>
+   <input type="checkbox" id="box" />
+   <label for="box"><img src="balloon.png" alt="balloon" width="71px" height="100px"></label>
+  </div>
  </body>
 </html>
