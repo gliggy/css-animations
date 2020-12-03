@@ -1,3 +1,12 @@
 body {
   background-color: lightskyblue;  
 }
+
+a, a:visited {
+  color: green;
+}
+
+a:hover {
+  color: darkgreen;
+  font-weight: bold;
+}
