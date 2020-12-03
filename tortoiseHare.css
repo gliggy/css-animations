@@ -1,0 +1,31 @@
+body {
+  background-color: beige;  
+  background-image: url('thing.png');
+  background-repeat: repeat-y;
+  background-position: top right; 
+  background-size: 100px;
+  overflow: hidden;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+p {
+ text-align: center;
+}
+
+#rabbit {animation-timing-function: ease;}
+#tortoise {
+  transform: scaleX(-1);
+  animation-timing-function: linear;
+}
+
+
+@keyframes mymove {
+  0% {left: 0px;}
+  100% {left: 95%;}
+}
